@@ -3,12 +3,14 @@
 [database]
 host = "127.0.0.1"
 username = "root"
+password = "123"
 dbname = "piwik_db"
 tables_prefix = "piwik_"
 
 [General]
 salt = "67c80b29dd73391c79361bb1d8a39b8f"
 trusted_hosts[] = "analytics-piwik.dono.dev"
+session_save_handler = dbtable
 
 [PluginsInstalled]
 PluginsInstalled[] = "Diagnostics"
